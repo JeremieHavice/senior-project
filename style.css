@@ -1,0 +1,327 @@
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0;
+    background-color: #5E4485;
+    color: #000000;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    margin-bottom: 0px;
+    color: #000000;
+    background-color: #5E4485;
+}
+
+.navbar-inverse {
+    margin-bottom: 0px !important;
+}
+
+.carousel-caption{
+    top: 40%;
+    !important font-size: 45px;
+    !important font-weight: bold;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.banner{
+    height: auto !important;
+    width: auto\9 !important;
+}
+.container{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.title-heading {
+    font-weight: bold;
+}
+
+.picture
+{
+    transform: translateY(-50%);
+}
+
+@media (min-width: 400px) and (max-width:600px)
+{
+    .carousel-caption
+    {
+        display: none;
+    }
+
+    #icon
+    {
+        max-width: 150px;
+    }
+}
+
+footer
+{
+    width: 100%;
+    background-color: #cbbeb5;
+    padding: 3%;
+    color: #fff;
+}
+
+.scenarios
+{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: xx-large;
+}
+
+.intro{}
+.title
+{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+}
+
+#quiz
+{
+    color: black;
+}
+
+.grid{
+    width: 600px;
+    height:500px;
+    margin: 0 auto;
+    background-image: url("../img/Trust2.jpeg");
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cbcbcb;
+}
+
+.grid h1 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    border-radius: 50px;
+}
+
+#score {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #fff0f5;
+    width: 185px;
+    font-size: 20px;
+    color: black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #5A6772;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #fff;
+    font-size: 18px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.panels {
+    min-height:100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background:#6B0F9C;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+    color:white;
+    text-align: center;
+    align-items:center;
+
+    transition:
+            font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            background 0.2s;
+    font-size: 20px;
+    background-size:cover;
+    background-position:center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel1 { background-image:url(../img/Prisoner.jpg); }
+.panel2 { background-image:url(../img/BeSilent.jpeg); }
+.panel3 { background-image:url(../img/Trust.jpeg); }
+.panel4 { background-image:url(../img/Types.jpeg);}
+
+/* Flex Children */
+
+.panel > * {
+    margin:0;
+    width: 100%;
+    transition:transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child {transform: translateY(-100%);}
+.panel.open-active > *:first-child {transform: translateY(0);}
+.panel > *:last-child {transform: translateY(100%);}
+.panel.open-active > *:last-child {transform: translateY(0);}
+
+.panel p {
+    text-transform: uppercase;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 1.5em;
+}
+.panel p:nth-child(2) {
+    font-size: 2em;
+}
+
+.panel.open {
+    flex: 5;
+    font-size:25px;
+}
+
+.cta {
+    color:white;
+    text-decoration: none;
+}
+
+.xop-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 6% 2%;
+}
+
+.xop-grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.xop-grid:after {
+    clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+    content: '';
+    display: table;
+}
+
+.xop-grid li {
+    width: 260px;
+    height: 230px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.xop-grid li {
+    width: 260px;
+    height: 230px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.xop-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+    -moz-transition:  0.3s ease-in-out,
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.xop-box:hover {
+    transform: scale(1.05);
+}
+
+.xop-img-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+    url(../img/time.jpeg);
+}
+
+.xop-img-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+    url(../img/info.jpeg);
+}
+
+.xop-img-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+    url(../img/know.jpg);
+}
+
+.xop-img-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+    url(../img/identity.jpeg);
+}
+
+.xop-info {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.xop-info h3 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 100px 0 0 0;
+    line-height: 1.5;
+}
+
+.xop-info p {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #fff;
+    padding: 4px 5px;
+    margin: 0 30px;
+    font-size: 14px;
+    line-height: 2;
+}
